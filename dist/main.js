@@ -345,7 +345,7 @@ module.exports = "div.settings {\n  position: absolute;\n  right: 10px;\n  top: 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SettingsComponent", function() { return SettingsComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var src_store_store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/store/store */ "./src/store/store.ts");
+/* harmony import */ var src_app_shared_store_store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/shared/store/store */ "./src/app/shared/store/store.ts");
 /* harmony import */ var src_environments_environment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/environments/environment */ "./src/environments/environment.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -365,13 +365,13 @@ var SettingsComponent = /** @class */ (function () {
         this.addDeviceUrl = src_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].domoticzUrl + '/#/Hardware';
     }
     SettingsComponent.prototype.ngOnInit = function () {
-        this.devicesEditable$ = this.store.select(src_store_store__WEBPACK_IMPORTED_MODULE_1__["DefaultStoreDataNames"].DEVICES_EDITABLE);
+        this.devicesEditable$ = this.store.select(src_app_shared_store_store__WEBPACK_IMPORTED_MODULE_1__["DefaultStoreDataNames"].DEVICES_EDITABLE);
     };
     SettingsComponent.prototype.handleClickEdit = function () {
-        this.store.set(src_store_store__WEBPACK_IMPORTED_MODULE_1__["DefaultStoreDataNames"].DEVICES_EDITABLE, true);
+        this.store.set(src_app_shared_store_store__WEBPACK_IMPORTED_MODULE_1__["DefaultStoreDataNames"].DEVICES_EDITABLE, true);
     };
     SettingsComponent.prototype.handleClickSave = function () {
-        this.store.set(src_store_store__WEBPACK_IMPORTED_MODULE_1__["DefaultStoreDataNames"].DEVICES_EDITABLE, false);
+        this.store.set(src_app_shared_store_store__WEBPACK_IMPORTED_MODULE_1__["DefaultStoreDataNames"].DEVICES_EDITABLE, false);
     };
     SettingsComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -379,7 +379,7 @@ var SettingsComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./settings.component.html */ "./src/app/dashboard/components/settings/settings.component.html"),
             styles: [__webpack_require__(/*! ./settings.component.scss */ "./src/app/dashboard/components/settings/settings.component.scss")]
         }),
-        __metadata("design:paramtypes", [src_store_store__WEBPACK_IMPORTED_MODULE_1__["Store"]])
+        __metadata("design:paramtypes", [src_app_shared_store_store__WEBPACK_IMPORTED_MODULE_1__["Store"]])
     ], SettingsComponent);
     return SettingsComponent;
 }());
@@ -700,7 +700,7 @@ module.exports = "div.card {\n  cursor: pointer;\n  border-radius: 10px; }\n  di
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DeviceComponent", function() { return DeviceComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var src_store_store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/store/store */ "./src/store/store.ts");
+/* harmony import */ var src_app_shared_store_store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/shared/store/store */ "./src/app/shared/store/store.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -718,7 +718,7 @@ var DeviceComponent = /** @class */ (function () {
     }
     DeviceComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.store.select(src_store_store__WEBPACK_IMPORTED_MODULE_1__["DefaultStoreDataNames"].DEVICES_EDITABLE)
+        this.store.select(src_app_shared_store_store__WEBPACK_IMPORTED_MODULE_1__["DefaultStoreDataNames"].DEVICES_EDITABLE)
             .subscribe(function (devicesEditable) { return _this.devicesEditable = devicesEditable; });
     };
     DeviceComponent.prototype.handleClick = function () {
@@ -741,7 +741,7 @@ var DeviceComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./device.component.html */ "./src/app/shared/components/devices/components/device/device.component.html"),
             styles: [__webpack_require__(/*! ./device.component.scss */ "./src/app/shared/components/devices/components/device/device.component.scss")]
         }),
-        __metadata("design:paramtypes", [src_store_store__WEBPACK_IMPORTED_MODULE_1__["Store"]])
+        __metadata("design:paramtypes", [src_app_shared_store_store__WEBPACK_IMPORTED_MODULE_1__["Store"]])
     ], DeviceComponent);
     return DeviceComponent;
 }());
@@ -783,7 +783,7 @@ module.exports = ""
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DevicesComponent", function() { return DevicesComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var src_store_store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/store/store */ "./src/store/store.ts");
+/* harmony import */ var src_app_shared_store_store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/shared/store/store */ "./src/app/shared/store/store.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -800,7 +800,7 @@ var DevicesComponent = /** @class */ (function () {
         this.store = store;
     }
     DevicesComponent.prototype.ngOnInit = function () {
-        this.devices$ = this.store.select(src_store_store__WEBPACK_IMPORTED_MODULE_1__["DefaultStoreDataNames"].DEVICES);
+        this.devices$ = this.store.select(src_app_shared_store_store__WEBPACK_IMPORTED_MODULE_1__["DefaultStoreDataNames"].DEVICES);
     };
     DevicesComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -808,7 +808,7 @@ var DevicesComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./devices.component.html */ "./src/app/shared/components/devices/components/devices/devices.component.html"),
             styles: [__webpack_require__(/*! ./devices.component.scss */ "./src/app/shared/components/devices/components/devices/devices.component.scss")]
         }),
-        __metadata("design:paramtypes", [src_store_store__WEBPACK_IMPORTED_MODULE_1__["Store"]])
+        __metadata("design:paramtypes", [src_app_shared_store_store__WEBPACK_IMPORTED_MODULE_1__["Store"]])
     ], DevicesComponent);
     return DevicesComponent;
 }());
@@ -1062,7 +1062,7 @@ module.exports = ".favoriteView {\n  overflow-x: scroll;\n  display: -webkit-inl
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ScenesComponent", function() { return ScenesComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var src_store_store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/store/store */ "./src/store/store.ts");
+/* harmony import */ var src_app_shared_store_store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/shared/store/store */ "./src/app/shared/store/store.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1081,7 +1081,7 @@ var ScenesComponent = /** @class */ (function () {
     ScenesComponent.prototype.ngOnInit = function () {
         if (this.favoriteView === null)
             this.favoriteView = false;
-        this.scenes$ = this.store.select(src_store_store__WEBPACK_IMPORTED_MODULE_1__["DefaultStoreDataNames"].SCENES);
+        this.scenes$ = this.store.select(src_app_shared_store_store__WEBPACK_IMPORTED_MODULE_1__["DefaultStoreDataNames"].SCENES);
     };
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
@@ -1093,7 +1093,7 @@ var ScenesComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./scenes.component.html */ "./src/app/shared/components/scenes/components/scenes/scenes.component.html"),
             styles: [__webpack_require__(/*! ./scenes.component.scss */ "./src/app/shared/components/scenes/components/scenes/scenes.component.scss")]
         }),
-        __metadata("design:paramtypes", [src_store_store__WEBPACK_IMPORTED_MODULE_1__["Store"]])
+        __metadata("design:paramtypes", [src_app_shared_store_store__WEBPACK_IMPORTED_MODULE_1__["Store"]])
     ], ScenesComponent);
     return ScenesComponent;
 }());
@@ -1279,7 +1279,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var src_environments_environment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/environments/environment */ "./src/environments/environment.ts");
-/* harmony import */ var src_store_store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/store/store */ "./src/store/store.ts");
+/* harmony import */ var src_app_shared_store_store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/shared/store/store */ "./src/app/shared/store/store.ts");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
 /* harmony import */ var _device_improvement_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./device-improvement.service */ "./src/app/shared/services/device-improvement.service.ts");
 var __assign = (undefined && undefined.__assign) || Object.assign || function(t) {
@@ -1328,8 +1328,8 @@ var DeviceService = /** @class */ (function () {
         return this.http.get(src_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].apiUrl, {
             params: httpParams
         }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (devices) {
-            devices.result = devices.result.map(function (device) { return _this.deviceImprovementService.addMethodsToDevice(device, _this.getDevices()); });
-            _this.store.set(src_store_store__WEBPACK_IMPORTED_MODULE_3__["DefaultStoreDataNames"].DEVICES, devices.result);
+            devices.result = devices.result.map(function (device) { return _this.deviceImprovementService.addMethodsToDevice(device, _this.getDevices(params)); });
+            _this.store.set(src_app_shared_store_store__WEBPACK_IMPORTED_MODULE_3__["DefaultStoreDataNames"].DEVICES, devices.result);
             return devices;
         }));
     };
@@ -1343,7 +1343,7 @@ var DeviceService = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
             providedIn: 'root'
         }),
-        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"], src_store_store__WEBPACK_IMPORTED_MODULE_3__["Store"], _device_improvement_service__WEBPACK_IMPORTED_MODULE_5__["DeviceImprovementService"]])
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"], src_app_shared_store_store__WEBPACK_IMPORTED_MODULE_3__["Store"], _device_improvement_service__WEBPACK_IMPORTED_MODULE_5__["DeviceImprovementService"]])
     ], DeviceService);
     return DeviceService;
 }());
@@ -1419,7 +1419,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var src_environments_environment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/environments/environment */ "./src/environments/environment.ts");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
-/* harmony import */ var src_store_store__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/store/store */ "./src/store/store.ts");
+/* harmony import */ var src_app_shared_store_store__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/shared/store/store */ "./src/app/shared/store/store.ts");
 /* harmony import */ var src_app_shared_services_notification_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/shared/services/notification.service */ "./src/app/shared/services/notification.service.ts");
 /* harmony import */ var src_app_shared_models_notification_types_enum__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/shared/models/notification-types.enum */ "./src/app/shared/models/notification-types.enum.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
@@ -1450,7 +1450,7 @@ var SceneService = /** @class */ (function () {
             .set('type', 'scenes');
         return this.http.get(src_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].apiUrl, { params: params })
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (scenes) {
-            _this.store.set(src_store_store__WEBPACK_IMPORTED_MODULE_4__["DefaultStoreDataNames"].SCENES, scenes.result);
+            _this.store.set(src_app_shared_store_store__WEBPACK_IMPORTED_MODULE_4__["DefaultStoreDataNames"].SCENES, scenes.result);
             return scenes;
         }));
     };
@@ -1471,7 +1471,7 @@ var SceneService = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
             providedIn: 'root'
         }),
-        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"], src_store_store__WEBPACK_IMPORTED_MODULE_4__["Store"], src_app_shared_services_notification_service__WEBPACK_IMPORTED_MODULE_5__["NotificationService"]])
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"], src_app_shared_store_store__WEBPACK_IMPORTED_MODULE_4__["Store"], src_app_shared_services_notification_service__WEBPACK_IMPORTED_MODULE_5__["NotificationService"]])
     ], SceneService);
     return SceneService;
 }());
@@ -1493,7 +1493,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var src_store_store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/store/store */ "./src/store/store.ts");
+/* harmony import */ var src_app_shared_store_store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/shared/store/store */ "./src/app/shared/store/store.ts");
 /* harmony import */ var _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fortawesome/angular-fontawesome */ "./node_modules/@fortawesome/angular-fontawesome/fesm5/angular-fontawesome.js");
 /* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
@@ -1538,7 +1538,7 @@ var SharedModule = /** @class */ (function () {
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__["BrowserAnimationsModule"]
             ],
             providers: [
-                src_store_store__WEBPACK_IMPORTED_MODULE_3__["Store"]
+                src_app_shared_store_store__WEBPACK_IMPORTED_MODULE_3__["Store"]
             ],
             declarations: [
                 _components_notification_notification_component__WEBPACK_IMPORTED_MODULE_7__["NotificationComponent"],
@@ -1563,6 +1563,67 @@ var SharedModule = /** @class */ (function () {
         })
     ], SharedModule);
     return SharedModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/store/store.ts":
+/*!***************************************!*\
+  !*** ./src/app/shared/store/store.ts ***!
+  \***************************************/
+/*! exports provided: DefaultStoreDataNames, Store */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DefaultStoreDataNames", function() { return DefaultStoreDataNames; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Store", function() { return Store; });
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+var __assign = (undefined && undefined.__assign) || Object.assign || function(t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+        s = arguments[i];
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+            t[p] = s[p];
+    }
+    return t;
+};
+
+
+
+var initState = {
+    devices: undefined,
+    devicesEditable: false,
+    scenes: undefined
+};
+var DefaultStoreDataNames;
+(function (DefaultStoreDataNames) {
+    DefaultStoreDataNames["DEVICES"] = "devices";
+    DefaultStoreDataNames["DEVICES_EDITABLE"] = "devicesEditable";
+    DefaultStoreDataNames["SCENES"] = "scenes";
+})(DefaultStoreDataNames || (DefaultStoreDataNames = {}));
+var Store = /** @class */ (function () {
+    function Store() {
+        this.subject = new rxjs__WEBPACK_IMPORTED_MODULE_0__["BehaviorSubject"](initState);
+        this.store = this.subject.asObservable().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["distinctUntilChanged"])());
+    }
+    Object.defineProperty(Store.prototype, "value", {
+        get: function () {
+            return this.subject.value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Store.prototype.select = function (name) {
+        return this.store.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["pluck"])(name));
+    };
+    Store.prototype.set = function (name, state) {
+        var _a;
+        this.subject.next(__assign({}, this.value, (_a = {}, _a[name] = state, _a)));
+    };
+    return Store;
 }());
 
 
@@ -1708,67 +1769,6 @@ if (_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].produc
 }
 Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_2__["AppModule"])
     .catch(function (err) { return console.error(err); });
-
-
-/***/ }),
-
-/***/ "./src/store/store.ts":
-/*!****************************!*\
-  !*** ./src/store/store.ts ***!
-  \****************************/
-/*! exports provided: DefaultStoreDataNames, Store */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DefaultStoreDataNames", function() { return DefaultStoreDataNames; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Store", function() { return Store; });
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
-var __assign = (undefined && undefined.__assign) || Object.assign || function(t) {
-    for (var s, i = 1, n = arguments.length; i < n; i++) {
-        s = arguments[i];
-        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-            t[p] = s[p];
-    }
-    return t;
-};
-
-
-
-var initState = {
-    devices: undefined,
-    devicesEditable: false,
-    scenes: undefined
-};
-var DefaultStoreDataNames;
-(function (DefaultStoreDataNames) {
-    DefaultStoreDataNames["DEVICES"] = "devices";
-    DefaultStoreDataNames["DEVICES_EDITABLE"] = "devicesEditable";
-    DefaultStoreDataNames["SCENES"] = "scenes";
-})(DefaultStoreDataNames || (DefaultStoreDataNames = {}));
-var Store = /** @class */ (function () {
-    function Store() {
-        this.subject = new rxjs__WEBPACK_IMPORTED_MODULE_0__["BehaviorSubject"](initState);
-        this.store = this.subject.asObservable().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["distinctUntilChanged"])());
-    }
-    Object.defineProperty(Store.prototype, "value", {
-        get: function () {
-            return this.subject.value;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Store.prototype.select = function (name) {
-        return this.store.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["pluck"])(name));
-    };
-    Store.prototype.set = function (name, state) {
-        var _a;
-        this.subject.next(__assign({}, this.value, (_a = {}, _a[name] = state, _a)));
-    };
-    return Store;
-}());
-
 
 
 /***/ }),
