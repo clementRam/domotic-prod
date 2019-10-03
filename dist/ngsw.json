@@ -1,0 +1,102 @@
+{
+  "configVersion": 1,
+  "timestamp": 1570087508134,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/6.d96be0777e34cf9ff6e8.js",
+        "/7.3fd48d86cafb40533b4a.js",
+        "/8.384cc586fff3dbfe34a6.js",
+        "/common.6dfeda7c13b0eee80593.js",
+        "/favicon.ico",
+        "/index.html",
+        "/main.c6fd4dba8d33577cfb54.js",
+        "/polyfills-es5.2cfbe4375e898c0f1893.js",
+        "/polyfills.d94a4e21861c7db0a0ed.js",
+        "/runtime.1f9f1ec58a4553f72b4b.js",
+        "/scripts.1216b4be0933c8af4627.js",
+        "/styles.b4a989e0a8555fbf935f.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/images/current.png",
+        "/assets/images/dimmer.png",
+        "/assets/images/house.jpg",
+        "/assets/images/lightbulb.png",
+        "/assets/images/lux.png",
+        "/assets/images/motion.png",
+        "/assets/images/temperature.png",
+        "/assets/svg/clock-regular.svg",
+        "/assets/svg/home-solid.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/6.d96be0777e34cf9ff6e8.js": "49acb492f03ceb191f56b41e3fac4b2c73b2c3e8",
+    "/7.3fd48d86cafb40533b4a.js": "29a86a1b4f083a50eef2f5a7da128c3b5c7200b7",
+    "/8.384cc586fff3dbfe34a6.js": "99caf457f65b97edbcb6f4ce460ba1ce2a0f7c6d",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/images/current.png": "c37e4180ab4e1f35be1ae374da71350fb25bbc69",
+    "/assets/images/dimmer.png": "f7b9e7372227902dd4cc5e68d5a2239cb1c4ad18",
+    "/assets/images/house.jpg": "8ffb15ee20a13853c10bd74b84d125c618b2c02a",
+    "/assets/images/lightbulb.png": "f7b9e7372227902dd4cc5e68d5a2239cb1c4ad18",
+    "/assets/images/lux.png": "6b31decc9c8c1f9b0ea8a202de228581b2d96f3b",
+    "/assets/images/motion.png": "afcb53119976b2946671976c7890e4e495ae24fe",
+    "/assets/images/temperature.png": "75b0bb2aecb43aab6448490cc71ccca18385a62c",
+    "/assets/svg/clock-regular.svg": "ba9b3be9acc37010d0e5cae77241d73585078b2c",
+    "/assets/svg/home-solid.svg": "b4775ee23a5f67d3dd6ac539ef3c44e0caf0776d",
+    "/common.6dfeda7c13b0eee80593.js": "e4409b3864bea3b2740a8b8282baf223122367d1",
+    "/favicon.ico": "3cc36c99bb72770ce349807c98594939c78c1312",
+    "/index.html": "5621fe70b9123d8f2fc362f114a8f8c487aa5975",
+    "/main.c6fd4dba8d33577cfb54.js": "a2a2682388348f4e1a59ad45487175abd4afa470",
+    "/polyfills-es5.2cfbe4375e898c0f1893.js": "3bfec3f0174633602d518b86fb4af6ac28425ea2",
+    "/polyfills.d94a4e21861c7db0a0ed.js": "90b16c97006902c1a089ff4e34f2dacdadd22958",
+    "/runtime.1f9f1ec58a4553f72b4b.js": "68b5506072c7cc8caf98409b450958140dbe8fb7",
+    "/scripts.1216b4be0933c8af4627.js": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "/styles.b4a989e0a8555fbf935f.css": "8605c56768c633ec9ebfa6b29f09c92d1f0e3d53"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
